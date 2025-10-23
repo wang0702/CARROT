@@ -65,3 +65,4 @@ corrected_latex*.tex
 # ==================== Specific Directories ====================
 # Exclude the specific directory
 68d207e55ca90b2fa8777ba3/
+core/config.py
