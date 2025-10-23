@@ -1,0 +1,67 @@
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# ==================== Models & Checkpoints ====================
+# All .pth files (PyTorch model checkpoints)
+*.pth
+# All .pkl files (pickled data)
+*.pkl
+
+# ==================== Markdown & Documentation ====================
+# Exclude all markdown files
+*.md
+# Exception: Keep README.md
+!README.md
+
+# ==================== Data ====================
+# Exclude all data directories
+data/hotpotqa/
+data/marco/
+data/wikipassage/
+
+# ==================== Logs ====================
+logs/
+*.log
+
+# ==================== Environment ====================
+.env
+.env.*
+venv/
+env/
+*.conda
+
+# ==================== IDE ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# ==================== OS ====================
+.DS_Store
+Thumbs.db
+
+# ==================== Temporary ====================
+*.tmp
+*.bak
+*~
+
+# ==================== Other ====================
+# PDFs
+*.pdf
+
+# ==================== LaTeX ====================
+# Exclude all tex files
+*.tex
+corrected_latex*.tex
+
+# ==================== Specific Directories ====================
+# Exclude the specific directory
+68d207e55ca90b2fa8777ba3/
