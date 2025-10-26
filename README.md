@@ -1,4 +1,4 @@
-# CARROT: Cost-Constrained Retrieval Optimization
+# CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG
 
 **CARROT** (**C**ost-constr**A**ined **R**et**R**ieval **O**p**T**imization) is a rank-based RAG framework that optimizes chunk combination order using Monte Carlo Tree Search (MCTS) with cost constraints.
 

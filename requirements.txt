@@ -1,38 +1,67 @@
-# Core ML/DL frameworks
-torch>=2.0.0
-transformers>=4.46.0
-sentence-transformers>=3.0.0
+# ============================================================================
+# CARROT_NEW Project Dependencies - Cleaned Version
+# Generated from rag_new environment
+# Critical packages are version-pinned to prevent breaking changes
+# ============================================================================
 
-# LlamaIndex framework
-llama-index>=0.10.53
-llama-index-core>=0.10.53
-llama-index-embeddings-openai>=0.1.10
-llama-index-llms-openai>=0.1.20
-llama-index-embeddings-huggingface>=0.2.2
+# ---------- Core Deep Learning Framework ----------
+# CRITICAL: torch version changes can break model compatibility
+torch==2.5.1
+# CRITICAL: transformers API changes frequently
+transformers==4.46.3
+# CRITICAL: einops for tensor operations
+einops==0.8.1
 
-# Embedding and reranking models
-FlagEmbedding>=1.2.0
+# ---------- LlamaIndex Ecosystem ----------
+# CRITICAL: LlamaIndex 0.10.x has different API than 0.11.x+
+# DO NOT upgrade without testing - API breaking changes!
+llama-index-core==0.10.53.post1
+llama-index-embeddings-huggingface==0.2.2
+llama-index-llms-ollama==0.1.5
+llama-index-llms-groq==0.1.4
+llama-index-llms-openai==0.1.20
 
-# Machine learning utilities
+# ---------- Embeddings & Retrieval ----------
+# CRITICAL: FlagEmbedding API can change between versions
+FlagEmbedding==1.2.10
+sentence-transformers==3.0.1
+faiss-cpu>=1.8.0  # or faiss-gpu if CUDA available
+
+# ---------- Data Processing ----------
+pandas>=2.0.0
+numpy>=1.24.0
+datasets>=2.20.0
+
+# ---------- Evaluation Metrics ----------
+rouge==1.0.1
+rouge-score==0.1.2
+
+# ---------- ML Utilities ----------
 scikit-learn>=1.5.0
-joblib>=1.4.0
-
-# Data processing
-pandas>=2.2.0
-numpy>=1.26.0
 scipy>=1.12.0
+joblib>=1.3.0
 
-# NLP utilities
-tiktoken>=0.7.0
-rouge-score>=0.1.2
-nltk>=3.9.0
-
-# Vector search
-faiss-cpu>=1.8.0
-
-# API clients
+# ---------- API & Network ----------
 openai>=1.0.0
+requests>=2.32.0
+tiktoken>=0.7.0
 
-# Utilities
+# ---------- Visualization ----------
+matplotlib>=3.8.0
+seaborn>=0.13.0
 tqdm>=4.67.0
-pydantic>=2.10.0
+
+# ---------- Utilities ----------
+ujson>=5.10.0
+
+# ---------- Optional: Training/Fine-tuning ----------
+# Uncomment if needed for model training
+# accelerate>=0.32.0
+# pytorch-lightning>=2.4.0
+# tensorboardX>=2.6.0
+
+# ---------- Optional: Advanced Features ----------
+# Uncomment if using specific features:
+# vllm>=0.6.4  # For fast LLM inference
+# ragas>=0.2.15  # For RAG evaluation
+# pyvis>=0.3.2  # For network visualization
